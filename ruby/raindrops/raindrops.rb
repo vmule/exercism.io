@@ -6,23 +6,19 @@ class Raindrops
     numbers_list = []
     string = ''
     prime_fact = Prime.prime_division(num)
-    if num == 1
-      return num.to_s
-    else
-      prime_fact.each do |array|
-        array.each do |number|
-          numbers_list.push(number)
-        end
+    prime_fact.each do |array|
+      array.each do |number|
+        numbers_list.push(number)
       end
-      if numbers_list.any? {|prime| prime == 3}
-        string = 'Pling'
-      end
-      if numbers_list.any? {|prime| prime == 5}
-        string = string + 'Plang'
-      end
-      if numbers_list.any? {|prime| prime == 7}
-        string = string + 'Plong'
-      end
+    end
+    if numbers_list.any? {|prime| prime == 3}
+      string += 'Pling'
+    end
+    if numbers_list.any? {|prime| prime == 5}
+      string += 'Plang'
+    end
+    if numbers_list.any? {|prime| prime == 7}
+      string += 'Plong'
     end
     if string == ''
       return num.to_s
@@ -30,5 +26,4 @@ class Raindrops
       return string
     end
   end
-
 end

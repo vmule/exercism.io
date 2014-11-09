@@ -21,8 +21,8 @@ class Complement
            'G' => 'C',
            'A' => 'T',
            'U' => 'A'}
-    complement = []
 
+    complement = []
     sequence = nucleotide.chars
     sequence.each do |i|
       complement.push(map[i])

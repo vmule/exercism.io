@@ -10,4 +10,3 @@ class Gigasecond
     return date_of_gs_birthday
   end
 end
-

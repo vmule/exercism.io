@@ -66,6 +66,4 @@ class RaindropsTest < MiniTest::Unit::TestCase
   def test_12121
     assert_equal "12121", Raindrops.convert(12121)
   end
-
 end
-

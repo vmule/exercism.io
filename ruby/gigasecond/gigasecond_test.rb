@@ -25,5 +25,5 @@ class GigasecondTest < MiniTest::Unit::TestCase
     gs = Gigasecond.from(your_birthday)
     assert_equal Date.new(2016, 7, 5), gs
   end
-
 end
+

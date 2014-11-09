@@ -3,21 +3,14 @@ require 'prime'
 class Raindrops
 
   def self.convert(num)
-    numbers_list = []
     string = ''
-    prime_fact = Prime.prime_division(num)
-    prime_fact.each do |array|
-      array.each do |number|
-        numbers_list.push(number)
-      end
-    end
-    if numbers_list.any? {|prime| prime == 3}
+    if num % 3 == 0
       string += 'Pling'
     end
-    if numbers_list.any? {|prime| prime == 5}
+    if num % 5 == 0
       string += 'Plang'
     end
-    if numbers_list.any? {|prime| prime == 7}
+    if num % 7 == 0
       string += 'Plong'
     end
     if string == ''

@@ -30,5 +30,5 @@ class Raindrops
       return string
     end
   end
-end
 
+end

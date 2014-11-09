@@ -68,3 +68,4 @@ class RaindropsTest < MiniTest::Unit::TestCase
   end
 
 end
+

@@ -1,5 +1,3 @@
-#!/usr/bin/ruby
-#
 class Hamming
 
   def self.compute(strand1, strand2)

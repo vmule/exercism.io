@@ -31,4 +31,3 @@ class Complement
   end
 
 end
-
